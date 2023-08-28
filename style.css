@@ -310,7 +310,7 @@ article ul{
     margin-top: 15px;
     border:1px solid #fff;
     width:50%;
-    border-radius:15px 0px 15px 0px;
+    border-radius:10px 10px 0px 0px;
     background-color:rgba(15, 58, 102, 0.75);
     padding:15px;
    
@@ -318,20 +318,21 @@ article ul{
 
 article ul li{
     margin-left: 15px;
-    font-size: 18px;
+    font-size: 1.1em;
     font-weight: 500;
     color:var(--secondary-color);
 }
 article .p2{
     position: relative;
     width: 48%;
-    left:25.5%;
+    left:25.9%;
     border:1px solid black;
     background: rgba(220, 20, 60, 0.7);
-    font-size: 18px;
+    font-size: 1.1em;
     color:var(--secondary-color);
     margin-top: 0px;
     padding: 5px;
+    border-radius:0px 0px 10px 10px;
 }
 
 /* Contact Section */
