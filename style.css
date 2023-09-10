@@ -29,6 +29,15 @@
     scroll-behavior: smooth;
 }
 
+hr{
+    width:100px;
+    height: 5px;
+    border:none;
+    background:crimson;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 5px;
+}
 
 /*body*/
 body{
@@ -60,7 +69,7 @@ header{
     text-decoration: none;
     font-size: 1.2em;
     font-weight: 500;
-    padding-left: 15px;
+    margin-left: 25px;
     transition: 0.5s ease;
 }
 .navigation a:hover{
@@ -75,7 +84,7 @@ section{
    min-height: 100vh;
    display: flex;
    align-items:center;
-   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("Pic/image/bg11.jpg") ;
+   background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("Pic/image/bg11.jpg") ;
    background-size:cover;
    background-position:center;
    background-attachment:fixed;
@@ -136,6 +145,7 @@ section{
     transition: 0.4 ease;
 }
 .social-icons a:hover{
+    
     color:var(--primary-color); 
     cursor: pointer;
 }
@@ -151,7 +161,7 @@ section{
     font-size: 2.2em;
     font-family: var(--title-font);
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     
     
 }
@@ -203,6 +213,9 @@ section{
     color:var(--secondary-color);
     
 }
+#projects hr{
+    background:var(--secondary-color);
+}
 .projects .content{
     margin-top: 30px;
 }
@@ -251,10 +264,11 @@ opacity: 0.8;
     color:rgb(227, 142, 159);
 }
 /* About Section */
+
 .my-skills{
     text-align: center;
     min-height: 100vh;
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("Pic/image/bg2.jpg");
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("pic/image/bg2.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     background-position:center;
@@ -275,20 +289,16 @@ opacity: 0.8;
     border-radius:50%;
     border:3px solid var(--secondary-color);
 }
-article h1{
-    font-size: 50px;
+article h2{
+    font-size: 40px;
     font-weight: 700;
     color:var(--secondary-color);
     font-family: var(--title-font);
 }
-article h1::after{
-    content:"";
-    height: 4px;
-    width:220px;
-    background-color:var(--secondary-color);
-    display: block;
-    margin: auto;
+#About hr{
+    background:var(--secondary-color);
 }
+
 .cont .p1{
     font-size: 17px;
     color:#ccc;
@@ -305,7 +315,7 @@ article h5{
 article ul{
     list-style-type: circle;
     position: relative;
-    text-align: start;
+    text-align: left;
     left:25%;
     margin-top: 15px;
     border:1px solid #fff;
@@ -342,6 +352,9 @@ article .p2{
 .card-contact .title{
     color:var(--secondary-color);
 }
+#contact hr{
+    background:var(--secondary-color);
+}
 .card-contact .icon{
     font-size: 2.5em;
 }
@@ -363,21 +376,13 @@ article .p2{
 .tit h2{
     display: inline-block;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     font-size: 2.2em;
     color:var(--primary-color);
 }
-.tit h2::after{
-    
-    content:"";
-    height: 2px;
-    width:100px;
-    background-color:var(--primary-color);
-    display: block;
-    margin: auto;
-    
-}
+
 .tit {
+    
     margin: auto;
     background:var(--secondary-color);
     padding: 15px;
@@ -404,54 +409,91 @@ article .p2{
 
 .footer-title{
     font-size: 1em;
-    font-weight:300;
+    font-weight:600;
     color:var(--secondary-color);
-}
-.footer-title span{
-    color:var(--primary-color);
 }
 .footer .social-icons a{
   font-size: 1.2em;
   padding: 0 12px 0 0;
 }
 
-@media (max-width:1023px){
+/* tablet responsive */
+@media (max-width:768px){
     header{
-        padding: 12px 20px;
+        display: block;
+        
+    }
+    header h1{
+       margin-left: 150px; 
+       margin-bottom: 15px;
+    }
+    header nav{
+        margin-left:35px;
+    }
+}
+/* Mobile responsive */
+@media (max-width:428px){
+    header{
+        
+        display: block;
+        padding: 10px 20px;
+        justify-content: center;
+    }
+    
+    .logo h1{
+       
+        font-size:25px ;
+        
+    }
+    .navigation {
+        
+        margin: auto;
     }
     .navigation a{
-        padding-left: 10px;
+        font-size: 15px;
+        margin-left: 20px;
     }
-    .title{
-        font-size: 1.8em;
-    }
-    section{
-        padding: 80px 20px;
-    }
-    .main-btn h2{
+    .main h2{
         font-size: 1em;
     }
-    .main-btn h2{
-        font-size: 1.6em;
+    .main h2 span{
+        font-size: 1.5em;
     }
-    .contact{
-        flex-direction: column;
-        align-items:center;
+    .main h3{
+        font-size: 1em;
+        line-height: 28px;
     }
-}
-@media (max-width:641px){
-    body{
-        font-size: 12px;
+    .card{
+        padding: 15px;
+        margin: 10px;
     }
-    .main-btn h2{
-        font-size: 0.8em;
+    .project-card{
+         margin: 10px;   
     }
-    .main-btn h3{
-        font-size: 1.4em;
+    .my-skills{
+        padding:10px;
     }
-}
-@media(max-width:300px){
-    body{
-        font-size: 10px;
+    .hero{
+        width: 100%;
+        margin: auto;
+        padding: 30px 0px;
+        
     }
+    .my-skills img{
+              
+        height: 150px;
+        width:150px;
+        
+    }
+    .cont .p1{
+        font-size: 14px;
+    }
+    article ul li{
+        font-size:14px;
+    }
+    article .p2{
+        font-size: 14px;
+    }
+    
+    
 }
