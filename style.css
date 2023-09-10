@@ -439,9 +439,7 @@ article .p2{
         padding: 10px 20px;
         justify-content: center;
     }
-    h2{
-     font-size:1.5rem;
-    }
+    
     .logo h1{
        
         font-size:25px ;
@@ -455,7 +453,7 @@ article .p2{
         font-size: 15px;
         margin-left: 20px;
     }
-    .main h2{
+    .main h2,#About h2, #servcies h2,.projects h2,.card-contact h2 ,.Sources h2{
         font-size: 1em;
     }
     .main h2 span{
@@ -496,6 +494,19 @@ article .p2{
     article .p2{
         font-size: 14px;
     }
-    
-    
+    hr{
+        width: 50px;
+        height: 2px;
+    }
+    .Sources{
+        padding: 0 ;
+    }
+    .Sources .tit{
+        margin-top: 25px;
+        font-size: 12px;
+        
+    }
+    .Sources .tit ul{
+        text-align: left;
+    } 
 }
